@@ -1,0 +1,173 @@
+.active {
+  border-bottom: 0.3rem solid white !important;
+}
+
+.container {
+  height: 100vh;
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+  background-position: center;
+}
+
+.hr {
+  position: absolute;
+  width: 38%;
+  z-index: 1;
+  left: 15rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0 0 5rem;
+  position: relative;
+}
+
+.links {
+  font-family: "Barlow Condensed";
+  font-size: 1.6rem;
+  letter-spacing: 0.27rem;
+  color: white;
+  padding: 0 6%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  height: 7rem;
+  white-space: pre;
+  border-bottom: 0.3rem solid transparent;
+}
+
+.links a:hover {
+  border-bottom: 0.3rem solid rgba(255, 255, 255, 0.5);
+}
+
+.menuButton {
+  display: none;
+}
+
+.mobileLinks {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hr {
+    width: 36%;
+  }
+
+  .links {
+    padding: 0 4%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hr {
+    left: 9rem;
+    width: 29%;
+  }
+
+  .links {
+    width: 65%;
+    padding: 0 5%;
+  }
+
+  .nav {
+    padding: 4rem 0 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .container {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+  }
+
+  .hr {
+    display: none;
+  }
+
+  .links strong {
+    display: none;
+  }
+
+  .nav {
+    padding: 0 0 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .links {
+    padding: 0 3%;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .active {
+    border-bottom: none !important;
+    border-right: 0.3rem solid white !important;
+  }
+
+  .closeButton {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  .closeButton span {
+    cursor: pointer;
+  }
+
+  .container {
+    background-image: url("../assets/home/background-home-mobile.jpg");
+  }
+
+  .links {
+    display: none;
+  }
+
+  .links a {
+    border-bottom: none !important;
+    height: auto;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+  }
+
+  .links a:hover {
+    border-bottom: none;
+    border-right: 0.3rem solid rgba(255, 255, 255, 0.5);
+  }
+
+  .links strong {
+    display: inline;
+  }
+
+  .menuButton {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobileLinks {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    padding: 4.35rem 0 0 3rem;
+  }
+
+  .nav {
+    padding: 3rem;
+  }
+}
