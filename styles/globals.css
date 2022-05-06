@@ -1,9 +1,10 @@
 html,
 body {
+  font-size: 62.5%;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Bellefair", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +14,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --almost-black: #0b0d17;
+  --light-purple: #d0d6f9;
 }
