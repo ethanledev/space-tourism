@@ -4,10 +4,7 @@
 
 .container {
   height: 100vh;
-  background-image: url("../assets/home/background-home-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: auto 100vh;
-  background-position: center;
+  position: relative;
 }
 
 .hr {
@@ -23,7 +20,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 4rem 0 0 5rem;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .links {
@@ -87,10 +87,6 @@
 }
 
 @media only screen and (max-width: 820px) {
-  .container {
-    background-image: url("../assets/home/background-home-tablet.jpg");
-  }
-
   .hr {
     display: none;
   }
@@ -126,10 +122,6 @@
 
   .closeButton span {
     cursor: pointer;
-  }
-
-  .container {
-    background-image: url("../assets/home/background-home-mobile.jpg");
   }
 
   .links {

@@ -12,7 +12,6 @@ const MyApp = ({ Component, pageProps }) => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      console.log("click");
       if (
         mobileLinksRef.current &&
         !mobileLinksRef.current.contains(event.target)
@@ -44,7 +43,7 @@ const MyApp = ({ Component, pageProps }) => {
       )}
       <Link href="/">
         <a
-          className={router.asPath === "/" ? styles.active : null}
+          className={router.pathname === "/" ? styles.active : null}
           onClick={() => setShowMenu(false)}
         >
           <strong>00</strong> HOME
@@ -52,7 +51,7 @@ const MyApp = ({ Component, pageProps }) => {
       </Link>
       <Link href="/destination">
         <a
-          className={router.asPath === "/destination" ? styles.active : null}
+          className={router.pathname === "/destination" ? styles.active : null}
           onClick={() => setShowMenu(false)}
         >
           <strong>01</strong> DESTINATION
@@ -60,7 +59,7 @@ const MyApp = ({ Component, pageProps }) => {
       </Link>
       <Link href="/crew">
         <a
-          className={router.asPath === "/crew" ? styles.active : null}
+          className={router.pathname === "/crew" ? styles.active : null}
           onClick={() => setShowMenu(false)}
         >
           <strong>02</strong> CREW
@@ -68,7 +67,7 @@ const MyApp = ({ Component, pageProps }) => {
       </Link>
       <Link href="/technology">
         <a
-          className={router.asPath === "/technology" ? styles.active : null}
+          className={router.pathname === "/technology" ? styles.active : null}
           onClick={() => setShowMenu(false)}
         >
           <strong>03</strong> TECHNOLOGY

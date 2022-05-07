@@ -16,6 +16,14 @@ a {
   box-sizing: border-box;
 }
 
+main {
+  height: 100%;
+  padding-top: 11rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 :root {
   --almost-black: #0b0d17;
   --light-purple: #d0d6f9;
