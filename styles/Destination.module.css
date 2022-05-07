@@ -20,6 +20,7 @@
 .content {
   padding-right: 25%;
   padding-left: 10%;
+  padding-top: 10%;
 }
 
 .detail {
@@ -33,17 +34,13 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  padding-top: 10%;
 }
 
 .main {
   background-image: url("../public/assets/destination/background-destination-desktop.jpg");
-}
-
-.section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-top: 10%;
-  height: 100%;
 }
 
 .tabs {
@@ -101,14 +98,14 @@
     padding: 5rem 0 0 0;
   }
 
-  .main {
-    background-image: url("../public/assets/destination/background-destination-tablet.jpg");
+  .image {
+    padding-top: 5%;
   }
 
-  .section {
+  .main {
+    background-image: url("../public/assets/destination/background-destination-tablet.jpg");
     display: flex;
     flex-direction: column;
-    padding: 5% 0;
   }
 
   .tabs {
