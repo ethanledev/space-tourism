@@ -27,7 +27,7 @@ const Destination = () => {
         <title>Pick Your Destination</title>
       </Head>
 
-      <h1>
+      <h1 className="tourHeading">
         <span>01</span>PICK YOUR DESTINATION
       </h1>
       <section className={styles.section}>
