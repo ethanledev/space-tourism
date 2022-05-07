@@ -24,6 +24,19 @@ main {
   background-position: center;
 }
 
+h2 {
+  font-weight: 100;
+}
+
+.srOnly {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  clip: rect(1px 1px 1px 1px);
+  position: absolute;
+}
+
 :root {
   --almost-black: #0b0d17;
   --light-purple: #d0d6f9;

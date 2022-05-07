@@ -157,6 +157,7 @@
     width: 70%;
     height: 100vh;
     padding: 4.35rem 0 0 3rem;
+    z-index: 1;
   }
 
   .nav {
