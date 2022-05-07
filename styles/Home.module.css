@@ -19,6 +19,7 @@
 
 .article p {
   font-size: 1.8rem;
+  font-family: "Barlow Condensed";
   color: var(--light-purple);
   line-height: 1.5;
   text-align: justify;
@@ -52,22 +53,22 @@
 }
 
 .main {
-  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-image: url("../public/assets/home/background-home-desktop.jpg");
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 11rem 15rem 15rem 15rem;
+  padding: 11rem 15rem 20% 15rem;
 }
 
 @media only screen and (max-width: 1200px) {
   .main {
-    padding: 11rem 10rem 15rem 10rem;
+    padding: 11rem 10rem 20% 10rem;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .main {
-    padding: 11rem 5rem 15rem 5rem;
+    padding: 11rem 5rem 20% 5rem;
   }
 }
 
@@ -98,7 +99,7 @@
   }
 
   .main {
-    background-image: url("../assets/home/background-home-tablet.jpg");
+    background-image: url("../public/assets/home/background-home-tablet.jpg");
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -133,7 +134,7 @@
   }
 
   .main {
-    background-image: url("../assets/home/background-home-mobile.jpg");
+    background-image: url("../public/assets/home/background-home-mobile.jpg");
   }
 }
 
