@@ -80,7 +80,9 @@ const MyApp = ({ Component, pageProps }) => {
     <div className={styles.container}>
       <nav className={styles.nav}>
         <hr className={styles.hr} />
-        <Image src="/logo.svg" width={48} height={48} alt="logo" />
+        <div className={styles.image}>
+          <Image src="/logo.svg" width={48} height={48} alt="logo" />
+        </div>
         <div className={styles.menuButton} onClick={() => setShowMenu(true)}>
           <Image
             src="/icon-hamburger.svg"

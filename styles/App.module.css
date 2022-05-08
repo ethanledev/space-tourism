@@ -3,7 +3,6 @@
 }
 
 .container {
-  max-width: 1440px;
   height: 100vh;
   position: relative;
   margin: 0 auto;
@@ -11,17 +10,20 @@
 
 .hr {
   position: absolute;
-  width: 38%;
+  width: 53rem;
   z-index: 1;
   left: 15rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.image {
+  margin: 0 5rem;
+}
+
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 4rem 0 0 5rem;
+  padding: 4rem 0 0 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -34,13 +36,14 @@
   font-size: 1.6rem;
   letter-spacing: 0.27rem;
   color: white;
-  padding: 0 6%;
+  padding: 0 5rem;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   display: flex;
   justify-content: space-between;
-  width: 55%;
+  margin-left: 50rem;
+  flex-grow: 1;
 }
 
 .links a {
@@ -63,35 +66,34 @@
   display: none;
 }
 
-@media only screen and (min-width: 1441px) {
-  .container {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-}
-
 @media only screen and (max-width: 1200px) {
   .hr {
-    width: 36%;
+    left: 9rem;
+    width: 41rem;
+  }
+
+  .image {
+    margin: 0 2rem;
   }
 
   .links {
-    padding: 0 4%;
+    margin-left: 40rem;
+    padding: 0 3rem;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .hr {
     left: 9rem;
-    width: 29%;
+    width: 26rem;
+  }
+
+  .image {
+    margin: 0 2rem;
   }
 
   .links {
-    width: 65%;
-    padding: 0 5%;
-  }
-
-  .nav {
-    padding: 4rem 0 0 2rem;
+    margin-left: 25rem;
   }
 }
 
@@ -100,19 +102,24 @@
     display: none;
   }
 
+  .links {
+    margin-left: 0;
+    flex-grow: unset;
+    width: 60%;
+  }
+
   .links strong {
     display: none;
   }
 
   .nav {
-    padding: 0 0 0 2rem;
+    justify-content: space-between;
   }
 }
 
 @media only screen and (max-width: 650px) {
   .links {
-    padding: 0 3%;
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -131,6 +138,10 @@
 
   .closeButton span {
     cursor: pointer;
+  }
+
+  .image {
+    margin: 0;
   }
 
   .links {
@@ -170,6 +181,6 @@
   }
 
   .nav {
-    padding: 3rem;
+    padding: 4rem 2rem 0 2rem;
   }
 }

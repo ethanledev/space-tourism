@@ -39,6 +39,9 @@
 
 .main {
   background-image: url("../public/assets/destination/background-destination-desktop.jpg");
+}
+
+.section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -107,6 +110,9 @@
 
   .main {
     background-image: url("../public/assets/destination/background-destination-tablet.jpg");
+  }
+
+  .section {
     display: flex;
     flex-direction: column;
   }

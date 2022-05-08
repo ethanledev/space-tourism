@@ -18,35 +18,37 @@ const Crew = () => {
         <span>02</span>MEET YOUR CREW
       </h1>
 
-      <div className={styles.content}>
-        <div></div> {/*spacer*/}
-        <article className={styles.article}>
-          <h2>
-            <span>{crew[index].role}</span>
-            <br />
-            {crew[index].name}
-          </h2>
-          <p>{crew[index].bio}</p>
-        </article>
-        <div className={styles.sliders}>
-          {crew.map((member, i) => (
-            <div
-              key={member.name}
-              className={i === index ? styles.active : null}
-              onClick={() => setIndex(i)}
-            ></div>
-          ))}
+      <section className={styles.section}>
+        <div className={styles.content}>
+          <div></div> {/*spacer*/}
+          <article className={styles.article}>
+            <h2>
+              <span>{crew[index].role}</span>
+              <br />
+              {crew[index].name}
+            </h2>
+            <p>{crew[index].bio}</p>
+          </article>
+          <div className={styles.sliders}>
+            {crew.map((member, i) => (
+              <div
+                key={member.name}
+                className={i === index ? styles.active : null}
+                onClick={() => setIndex(i)}
+              ></div>
+            ))}
+          </div>
         </div>
-      </div>
-      <div className={styles.image}>
-        <Image
-          src={crew[index].images.webp}
-          alt={crew[index].name}
-          layout="fill"
-          objectFit="contain"
-          objectPosition="bottom"
-        />
-      </div>
+        <div className={styles.image}>
+          <Image
+            src={crew[index].images.webp}
+            alt={crew[index].name}
+            layout="fill"
+            objectFit="contain"
+            objectPosition="bottom"
+          />
+        </div>
+      </section>
     </main>
   );
 };

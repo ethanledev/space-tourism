@@ -54,27 +54,34 @@
 
 .main {
   background-image: url("../public/assets/home/background-home-desktop.jpg");
+}
+
+.section {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 11rem 15rem 20% 15rem;
+  padding: 11rem 10rem 20% 10rem;
 }
 
 @media only screen and (max-width: 1200px) {
-  .main {
-    padding: 11rem 10rem 20% 10rem;
+  .section {
+    padding: 11rem 5rem 20% 5rem;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .main {
-    padding: 11rem 5rem 20% 5rem;
+  .section {
+    padding: 11rem 2rem 20% 2rem;
   }
 }
 
 @media only screen and (max-width: 820px) {
   .article {
     text-align: center;
+  }
+
+  .exploreButton {
+    margin-top: 5rem;
   }
 
   .exploreButton:hover::before {
@@ -100,15 +107,18 @@
 
   .main {
     background-image: url("../public/assets/home/background-home-tablet.jpg");
+  }
+
+  .section {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 11rem 5rem 10rem 5rem;
+    padding: 11rem 2rem 10rem 2rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .main {
+  .section {
     padding: 11rem 2rem 15rem 2rem;
   }
 
@@ -138,9 +148,17 @@
   }
 }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 350px) {
+  .article h2 {
+    font-size: 2.4rem;
+  }
+
   .article strong {
     font-size: 7.5rem;
+  }
+
+  .section {
+    padding: 11rem 0.5rem 15rem 0.5rem;
   }
 }
 
